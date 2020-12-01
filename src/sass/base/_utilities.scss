@@ -1,0 +1,22 @@
+.page-wrapper {
+  padding: 8rem 0;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.page-header {
+  font-size: 3.5rem;
+  letter-spacing: 0.1rem;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.space-btw {
+  justify-content: space-between;
+}

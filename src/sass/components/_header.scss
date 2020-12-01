@@ -1,0 +1,59 @@
+.header {
+  height: 6rem;
+  background-color: $color-white;
+  color: $color-black;
+
+  &__nav {
+    width: 90%;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.logo {
+  &__box {
+    flex-basis: 50%;
+  }
+
+  &__text {
+    font-size: 2.5rem;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 600;
+    letter-spacing: 0.3rem;
+    text-transform: lowercase;
+    height: 100%;
+  }
+}
+
+.nav {
+  &__list {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__item {
+    font-size: 1.6rem;
+    font-family: "Roboto Mono", monospace;
+
+    &:not(:last-child) {
+      margin-right: 3rem;
+    }
+  }
+
+  &__link {
+    padding: 1.5rem 0;
+    transition: 0.2s ease-in-out text-decoration;
+
+    &--active {
+      text-decoration: line-through;
+      color: $color-orange;
+    }
+
+    &:hover {
+      text-decoration: line-through;
+    }
+  }
+}
