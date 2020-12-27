@@ -1,10 +1,21 @@
 .projects {
   width: 90%;
   margin: 5rem auto;
-
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
-  gap: 8rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(auto-fit, 40rem);
+  grid-column-gap: 4rem;
+  grid-row-gap: 4rem;
+
+  @media (max-width: 1000px) {
+    grid-template-columns: 1fr;
+    grid-row-gap: 6rem;
+    grid-column-gap: 0;
+  }
+
+  @media (max-width: 600px) {
+    width: 95%;
+  }
 }
 
 .project {
@@ -22,7 +33,7 @@
   }
 
   &__image {
-    height: 30rem;
+    height: 35rem;
     object-fit: cover;
   }
 

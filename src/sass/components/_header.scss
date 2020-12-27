@@ -3,12 +3,24 @@
   background-color: $color-white;
   color: $color-black;
 
+  @media (max-width: 600px) {
+    height: auto;
+  }
+
   &__nav {
     width: 90%;
     margin: auto;
     height: 100%;
     display: flex;
     align-items: center;
+
+    @media (max-width: 780px) {
+      width: 95%;
+    }
+
+    @media (max-width: 600px) {
+      flex-direction: column;
+    }
   }
 }
 
@@ -24,6 +36,16 @@
     letter-spacing: 0.3rem;
     text-transform: lowercase;
     height: 100%;
+
+    @media (max-width: 780px) {
+      letter-spacing: 0;
+    }
+
+    @media (max-width: 600px) {
+      flex-direction: column;
+      letter-spacing: 0.2rem;
+      margin-bottom: 1rem;
+    }
   }
 }
 
@@ -32,6 +54,11 @@
     flex-basis: 50%;
     display: flex;
     justify-content: flex-end;
+
+    @media (max-width: 600px) {
+      width: 90%;
+      justify-content: space-between;
+    }
   }
 
   &__item {
@@ -40,6 +67,10 @@
 
     &:not(:last-child) {
       margin-right: 3rem;
+
+      @media (max-width: 600px) {
+        margin-right: 0;
+      }
     }
   }
 

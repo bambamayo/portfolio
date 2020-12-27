@@ -11,6 +11,10 @@
   font-weight: 600;
   text-transform: uppercase;
   text-align: center;
+
+  @media (max-width: 600px) {
+    font-size: 3rem;
+  }
 }
 
 .flex {
