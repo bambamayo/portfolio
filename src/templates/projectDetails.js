@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 
 export default function ProjectDetails({ data }) {
   const project = data.allContentfulProjectList.edges[0].node
-  console.log(project)
+
   return (
     <Layout>
       <section className="page-wrapper">

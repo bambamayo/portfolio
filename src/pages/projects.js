@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import { graphql, Link, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
+import Spinner from "../components/Spinner"
 
 export default function Projects() {
   const [projectList, setProjectList] = React.useState(null)
@@ -33,7 +34,7 @@ export default function Projects() {
         <h2 className="page-header">Some things i have built</h2>
         <div className="projects">
           {projectList === null ? (
-            <p>loading</p>
+            <Spinner />
           ) : (
             projectList.map(project => (
               <Link
