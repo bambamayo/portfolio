@@ -2,8 +2,16 @@
   width: 90%;
   margin: 5rem auto;
 
+  @media (max-width: 600px) {
+    width: 96%;
+  }
+
   &__thumbnail {
     flex-basis: 70%;
+
+    @media (max-width: 780px) {
+      margin-bottom: 1rem;
+    }
 
     &-img {
       width: 100%;
@@ -17,6 +25,10 @@
     flex-basis: 25%;
     text-align: center;
     padding-top: 1rem;
+
+    @media (max-width: 780px) {
+      margin-bottom: 1rem;
+    }
 
     &-header {
       font-size: 2.2rem;
@@ -38,6 +50,14 @@
     width: 40%;
     font-size: 1.7rem;
     margin-top: 1rem;
+
+    @media (max-width: 1200px) {
+      width: 60%;
+    }
+
+    @media (max-width: 780px) {
+      width: 100%;
+    }
   }
 
   &__ext-links {
@@ -65,6 +85,11 @@
     grid-template-rows: repeat(2, 1fr);
     gap: 1rem;
     margin-top: 4rem;
+
+    @media (max-width: 780px) {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(auto-fit, 1fr);
+    }
   }
 
   &__image-cont {
