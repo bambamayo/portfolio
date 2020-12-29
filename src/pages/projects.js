@@ -1,5 +1,5 @@
 import React from "react"
-import Layout from "../components/layout"
+import Layout from "../components/Layout"
 import { graphql, Link, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import Spinner from "../components/Spinner"
