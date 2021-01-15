@@ -89,8 +89,6 @@ export default function Contact() {
       })
   }
 
-  console.log(fieldErrors)
-
   return (
     <Layout>
       <section className="page-wrapper">
